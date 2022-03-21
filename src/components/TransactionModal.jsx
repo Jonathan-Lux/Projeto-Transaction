@@ -43,7 +43,6 @@ export default function TransactionModal(props) {
         <form className="modal-form" onSubmit={HandleCreatNewTransaction}>
             <h2>Cadastar Transação</h2>
             <button className="close-modal-bt" type="button"><img src={closeImg} alt="fechar modal" onClick={props.isCloseModal}></img></button>
-            <button></button>
             <input value={title} onChange={event=>setTitle(event.target.value)} type="text" placeholder="Título"></input>
             <input value={amount} onChange={event=>setAmount(+event.target.value)} type="number" placeholder="Valor"></input>
 
